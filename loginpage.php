@@ -21,7 +21,7 @@ require ('loginsystem.php');
                 <label>Password:</label>
             </div>
             <div class="col-75">
-                <input type="text" name="login_password" placeholder="Your password..">
+                <input type="password" name="login_password" placeholder="Your password..">
             </div>
         </div>
         <div class="col-25"></div>
