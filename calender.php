@@ -4,8 +4,8 @@ src=YmFzaWVjcmF6eTE0QGdtYWlsLmNvbQ&amp;"
 
 
         style="border:solid 1px #777"
-        width="500"
-        height="600"
+        width="300"
+        height="400"
         frameborder="0"
         scrolling="no"
 </iframe>
