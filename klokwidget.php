@@ -2,8 +2,8 @@
         style="border-radius: 15px"
         name="klokwidget"
         scrolling="no"
-        frameborder="1"
-        height="417px"
-        width="417px"
+        frameborder="0"
+        height="190px"
+        width="190px"
         allowfullscreen>
 </iframe>
