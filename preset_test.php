@@ -1,3 +1,4 @@
+<?php require "klokwidget.php";?>
 <!doctype html>
 <head>
     <meta charset="utf-8">
