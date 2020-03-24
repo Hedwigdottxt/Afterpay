@@ -2,11 +2,6 @@
 <html>
 <body>
 
-<h1>Kloktest</h1>
-
-<p>Documentje om de klok widget te testen<br>
-klok gevonden op <a href="https://www.w3schools.com/graphics/canvas_clock_start.asp">W3schools</a></p>
-
 <canvas id="canvas" width="400" height="400"
 style="background-color:rgb(184, 211, 138)">
 </canvas>
