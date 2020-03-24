@@ -3,7 +3,6 @@
 <body>
 
 <canvas id="canvas" width="400" height="400"
-style="background-color:rgb(184, 211, 138)">
 </canvas>
 
 <script>
