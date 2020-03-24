@@ -1,9 +1,9 @@
-<iframe src="nieuws_widget_content.php"
+<iframe src="reis_widget_content.php"
         style="border-radius: 15px"
-        name="News_widget"
+        name="9292_widget"
         scrolling="no"
         frameborder="1"
-        height="750px"
-        width="500px"
+        height="790px"
+        width="400px"
         allowfullscreen>
 </iframe>
