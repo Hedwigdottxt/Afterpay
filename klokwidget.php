@@ -3,7 +3,7 @@
         name="klokwidget"
         scrolling="no"
         frameborder="0"
-        height="417px"
-        width="417px"
+        height="190px"
+        width="190px"
         allowfullscreen>
 </iframe>
