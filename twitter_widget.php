@@ -3,7 +3,8 @@
         name="Twitter_widget"
         scrolling="no"
         frameborder="1"
-        height="700px"
-        width="470px"
+        height="100%"
+        width="100%"
+        align="center"
         allowfullscreen>
 </iframe>
