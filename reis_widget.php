@@ -3,7 +3,7 @@
         name="9292_widget"
         scrolling="no"
         frameborder="1"
-        height="790px"
-        width="450px"
+        height="100%"
+        width="100%"
         allowfullscreen>
 </iframe>
