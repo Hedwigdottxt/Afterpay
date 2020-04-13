@@ -3,7 +3,8 @@
         name="News_widget"
         scrolling="no"
         frameborder="1"
-        height="785px"
-        width="600px"
+        height="100%"
+        width="100%"
+        align="center"
         allowfullscreen>
 </iframe>
