@@ -3,22 +3,26 @@ require "digital_klokwidget.php";
 require "addpreset.php";
 include 'pagehandler.php';
 $page = getPage();
-
-if ($page->index1 == "reis") { ?>
-alert("widget 1 is reis!");
-<?php } ?>
+?>
 <!doctype html>
 <head>
     <script
             src="https://code.jquery.com/jquery-3.4.1.min.js"
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-            crossorigin="anonymous"></script>
+            crossorigin="anonymous">
+    </script>
     <style>
         body {
             background-image: url("background.png");
             background-size: cover;
             margin-left: 0px;
             margin-right: 0px;
+        }
+        #sidenavbutton {
+            background: url(afterpay.png) no-repeat;
+            width: 474px;
+            height: 108px;
+            float: right;
         }
     </style>
     <script>
@@ -41,7 +45,7 @@ alert("widget 1 is reis!");
                 index: index,
                 widget: widget
             }, function() {
-// Dingen die je wilt doen na het opslaan van de widget idk
+        // Dingen die je wilt doen na het opslaan van de widget idk
             });
 
         }
@@ -49,6 +53,7 @@ alert("widget 1 is reis!");
 
 </head>
 <body>
+<button id="sidenavbutton" class="openbtn" onclick="openNav()"></button>
 <?php require "sidebar.php"; ?>
 <style>
     .wrapper {
@@ -70,11 +75,59 @@ alert("widget 1 is reis!");
     }
     </style>
 <div class="wrapper">
-    <div id ="1" class="box a" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
-    <div id ="2" class="box b" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
-    <div id ="3" class="box c" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
-    <div id ="4" class="box d" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+    <div id ="1" class="box a" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <?php if ($page->index1 == "reis") { ?>
+        <?php require "reis_widget.php"?>
+    <?php } ?>
+<?php if ($page->index1 == "youtube") { ?>
+<?php require "youtube_playlist.php"?>
+<?php } ?>
+<?php if ($page->index1 == "nieuws") { ?>
+<?php require "nieuws_widget.php"?>
+<?php } ?>
+<?php if ($page->index1 == "calender") { ?>
+<?php require "calender.php"?>
+<?php } ?></div>
+    <div id="2" class="box b" ondrop="drop(event)" ondragover="allowDrop(event)" >
+<?php if ($page->index2 == "reis") { ?>
+<?php require "reis_widget.php"?>
+<?php } ?>
+<?php if ($page->index2 == "youtube") { ?>
+<?php require "youtube_playlist.php"?>
+<?php } ?>
+<?php if ($page->index2 == "nieuws") { ?>
+<?php require "nieuws_widget.php"?>
+<?php } ?>
+<?php if ($page->index2 == "calender") { ?>
+<?php require "calender.php"?>
+<?php } ?></div>
+    <div id="3" class="box c" ondrop="drop(event)" ondragover="allowDrop(event)" >
+<?php if ($page->index3 == "reis") { ?>
+<?php require "reis_widget.php"?>
+<?php } ?>
+<?php if ($page->index3 == "youtube") { ?>
+<?php require "youtube_playlist.php"?>
+<?php } ?>
+<?php if ($page->index3 == "nieuws") { ?>
+<?php require "nieuws_widget.php"?>
+<?php } ?>
+<?php if ($page->index3 == "calender") { ?>
+<?php require "calender.php"?>
+<?php } ?></div>
+    <div id="4" class="box d" ondrop="drop(event)" ondragover="allowDrop(event)" >
+<?php if ($page->index4 == "reis") { ?>
+<?php require "reis_widget.php"?>
+<?php } ?>
+<?php if ($page->index4 == "youtube") { ?>
+<?php require "youtube_playlist.php"?>
+<?php } ?>
+<?php if ($page->index4 == "nieuws") { ?>
+<?php require "nieuws_widget.php"?>
+<?php } ?>
+<?php if ($page->index4 == "calender") { ?>
+<?php require "calender.php"?>
+<?php } ?></div>
 </div>
-<div id="reis" draggable="true" ondragstart="drag(event)"><?php require "reis_widget.php"?></div>
 </body>
 </html>
+
