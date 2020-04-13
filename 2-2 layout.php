@@ -17,7 +17,7 @@
     </style>
 <div class="wrapper">
     <div id ="box a" class="box a" ondrop="drop(event)" ondragover="allowDrop(event)" >+</div>
-    <div id ="box a" class="box b" ondrop="drop(event)" ondragover="allowDrop(event)" >+</div>
-    <div id ="box a" class="box d" ondrop="drop(event)" ondragover="allowDrop(event)" >+</div>
-    <div id ="box a" class="box c" ondrop="drop(event)" ondragover="allowDrop(event)" >+</div>
+    <div id ="box b" class="box b" ondrop="drop(event)" ondragover="allowDrop(event)" >+</div>
+    <div id ="box c" class="box c" ondrop="drop(event)" ondragover="allowDrop(event)" >+</div>
+    <div id ="box d" class="box d" ondrop="drop(event)" ondragover="allowDrop(event)" >+</div>
 </div>
