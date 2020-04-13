@@ -1,4 +1,5 @@
 <?php
+session_start();
 require "digital_klokwidget.php";
 require "addpreset.php";
 include 'pagehandler.php';
@@ -58,9 +59,10 @@ $page = getPage();
 <style>
     .wrapper {
         margin-left: 0.5%;
+        margin-right: 0.5%;
         display: grid;
         grid-template-columns: 49.5% 49.5%;
-        grid-gap: 10px;
+        grid-gap: 7px;
         color: #444;
         height: 85%;
         border: 1px black;
@@ -68,7 +70,7 @@ $page = getPage();
     .box {
         color: #fff;
         border-radius: 5px;
-        padding: 20px;
+        padding: 7px;
         font-size: 150%;
         border-color: gray;
         border-style: dashed;
@@ -130,4 +132,5 @@ $page = getPage();
 </div>
 </body>
 </html>
+
 
