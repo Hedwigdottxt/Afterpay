@@ -1,6 +1,3 @@
 <body>
-<iframe width="560" height="315"
-        src="https://www.youtube.com/watch?v=tqD9sMpbvYA"
-        frameborder="0" allow="autoplay; encrypted-media"
-        allowfullscreen></iframe>
+<iframe width="100%" height="100%" src="https://www.youtube.com/embed/videoseries?list=PLFC7078D095B209BC" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </body>
