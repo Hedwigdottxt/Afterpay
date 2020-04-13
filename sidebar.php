@@ -1,3 +1,4 @@
+<?php $nameErr = ""; ?>
 <style>
 
     .sidepanel  {
@@ -62,8 +63,16 @@
         document.getElementById("mySidepanel").style.width = "0";
     }
 
-    function myFunction() {
+    function opennav() {
         var x = document.getElementById("PresetsForm");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+    function openwidgets() {
+        var x = document.getElementById("layouteditor");
         if (x.style.display === "none") {
             x.style.display = "block";
         } else {
@@ -75,7 +84,6 @@
 
 <div id="mySidepanel" class="sidepanel">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-    <a onclick="myFunction()">Presets toevoegen</a>
     <div id="PresetsForm" style="display:none;">
         <form method="post">
             Choose layout:
@@ -86,12 +94,31 @@
             </select><br>
             Preset name:<br> <input type="text" name="presetname"><?php echo $nameErr ?><br>
             <p></p><br>
+            <input onclick="openwidgets()" type="submit" name="makingpresetsubmit" value="Create preset" /><hr/><br/>
+            <br>
+
+        </form>
+    </div>
+    <div id="layouteditp" style="display:none;">
+        <form method="post">
+            Choose widget 1:
+            <select name="widget 1">
+                <option value="reis">reis</option>
+                <option value="twitter">twitter</option>
+                <option value="nieuws">nieuws</option>
+            </select><br>
+            Preset name:<br> <input type="text" name="presetname"><?php echo $nameErr ?><br>
+            <br>
             <input type="submit" name="makingpresetsubmit" value="Create preset" /><hr/><br/>
             <br>
 
         </form>
     </div>
+    <div id="reis" draggable="true" ondragstart="drag(event)"><a>Bushalte Widget</a></div>
+    <div id="youtube" draggable="true" ondragstart="drag(event)"><a>Youtube Widget</a></div>
+    <div id="calender" draggable="true" ondragstart="drag(event)"><a>Kalender Widget</a></div>
+    <div id="nieuws" draggable="true" ondragstart="drag(event)"><a>Nieuws Widget<a></div>
+    <hr>
     <?php require "presetname_list.php";?>
 </div>
 
-<button class="openbtn" onclick="openNav()">☰ Toggle Sidepanel</button>
