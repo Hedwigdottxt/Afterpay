@@ -24,7 +24,7 @@ if (isset($_POST["login_submit"])) {
         $query = "SELECT * FROM `afterpay.users` WHERE `username` = '" . $user . "' AND `password` = '" . $pass . "'";
         $result = mysqli_query($conn, $query);
         if (mysqli_num_rows($result) == 1) {
-            header('Location: /profiel.php?login=succes');
+            header('Location: ../Afterpay/basic.php');
         } else {
             echo '<script>alert("Login values not valid!")</script>';
         }
