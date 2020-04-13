@@ -6,8 +6,8 @@ $host = "localhost";
 $databaseName = "afterpay";
 $databaseusername = "root";
 $databasepassword = "student";
-
-if (isset($_POST["presetname"])) {
+$layout = $_POST["layout"] ?? false;
+if (isset($_POST["makingpresetsubmit"])) {
     $error = false;
 
     if (empty($_POST["presetname"])) {
@@ -23,8 +23,7 @@ if (isset($_POST["presetname"])) {
             // set the PDO error mode to exception
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $sql = "INSERT INTO afterpay.presets (presetname, layout)
-            VALUES ('$name', '')";
-            echo "gelukt";
+            VALUES ('$name', '$layout')";
             // use exec() because no results are returned
             $conn->exec($sql);
         } catch (PDOException $e) {
