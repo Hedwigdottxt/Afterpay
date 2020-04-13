@@ -1,0 +1,13 @@
+{
+    "sqltools.connections": [
+        {
+            "database": "afterpay",
+            "dialect": "MariaDB",
+            "name": "mariadb",
+            "password": "student",
+            "port": 3306,
+            "server": "localhost",
+            "username": "root"
+        }
+    ]
+}
