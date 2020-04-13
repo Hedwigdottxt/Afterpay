@@ -40,7 +40,7 @@ function changeWidget() {
 
 function getPage(): Page
 {
-    $pageData = file_get_contents("page.txt");
+    $pageData = file_get_contents('page.txt');
     $page = unserialize($pageData);
     return $page;
 }
@@ -48,7 +48,7 @@ function getPage(): Page
 function savePage(Page $page)
 {
     $pageData = serialize($page);
-    $fp = fopen("page.txt", "w");
+    $fp = fopen('page.txt', 'w');
     fwrite($fp, $pageData);
     fclose($fp);
 }
