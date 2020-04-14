@@ -1,4 +1,8 @@
 <?php
+if (isset($_COOKIE['Login'])) {
+    unset($_COOKIE['Login']);
+    setcookie('Login', '', time() - 3600, '/');
+}
 $host = "localhost";
 $databaseName = "afterpay";
 $databaseusername = "root";
@@ -8,8 +12,8 @@ $conn = mysqli_connect($host, $databaseusername, $databasepassword, $databaseNam
 
 
 if (isset($_POST["login_submit"])) {
-    $user = $_POST["login_username"] ?? false;
-    $pass = $_POST["login_password"] ?? false;
+    $user = filter_var($_POST["login_username"], FILTER_SANITIZE_STRING) ?? false;
+    $pass = filter_var($_POST["login_password"], FILTER_SANITIZE_STRING) ?? false;
 
     $_SESSION["username"] = $user;
     $_SESSION["password"] = $pass;
@@ -26,7 +30,7 @@ if (isset($_POST["login_submit"])) {
         if (mysqli_num_rows($result) == 1) {
             $cookie_name = "Login";
             $cookie_value = "Loggedin";
-            setcookie($cookie_name, $cookie_value, time() + (80000), "/");
+            setcookie($cookie_name, $cookie_value, time() + (86400), "/");
             header('Location: /github afterpay/Afterpay/making_presets.php');
         } else {
             echo '<script>alert("Login values not valid!")</script>';

@@ -2,8 +2,9 @@
 
 
         style="border:solid 1px #777"
-        width="500"
-        height="600"
+        width="100%"
+        height="100%"
         frameborder="0"
         scrolling="no"
+        id="Reloadiframecalender">
 </iframe>

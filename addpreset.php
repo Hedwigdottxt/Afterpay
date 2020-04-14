@@ -24,8 +24,10 @@ if (isset($_POST["makingpresetsubmit"])) {
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $sql = "INSERT INTO afterpay.presets (presetname, layout)
             VALUES ('$name', '$layout')";
-            // use exec() because no results are returned
             $conn->exec($sql);
+
+            $_SESSION['Naam_preset'] = ($_POST["presetname"]);
+
         } catch (PDOException $e) {
             echo $sql . "<br>" . $e->getMessage();
         }

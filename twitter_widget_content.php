@@ -1,3 +1,4 @@
+<?php require "checklogin.php"; ?>
 <style>
     body {width: auto; height: auto;}
     body {background-color: #A7F3AF;}

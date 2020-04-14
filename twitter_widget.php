@@ -1,3 +1,4 @@
+<?php require "checklogin.php"; ?>
 <iframe src="twitter_widget_content.php"
         style="border-radius: 15px"
         name="Twitter_widget"
@@ -6,5 +7,6 @@
         height="100%"
         width="100%"
         align="center"
+        id="Reloadiframe"
         allowfullscreen>
 </iframe>

@@ -1,12 +1,11 @@
 <?php require "checklogin.php"; ?>
-<iframe src="nieuws_widget_content.php"
+<iframe src="orderaantallen_content.php"
         style="border-radius: 15px"
-        name="News_widget"
+        name="Orderaantallen_widget"
         scrolling="no"
         frameborder="1"
         height="100%"
         width="100%"
-        align="center"
-        id="Reloadiframenieuws">
+        id="Reloadiframeorder"
         allowfullscreen>
 </iframe>

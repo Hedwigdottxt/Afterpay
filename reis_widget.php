@@ -1,3 +1,4 @@
+<?php require "checklogin.php"; ?>
 <iframe src="reis_widget_content.php"
         style="border-radius: 15px"
         name="9292_widget"

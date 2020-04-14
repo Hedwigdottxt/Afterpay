@@ -1,6 +1,14 @@
-<?php require "klokwidget.php";?>
+<?php require "digital_klokwidget.php";
+require "making_presets.php"
+?>
 <!doctype html>
 <head>
+    <style>
+    body {
+    background-image: url("background.png");
+        background-size: cover;
+    }
+    </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -21,4 +29,3 @@
     </div>
 </div>
 </body>
-

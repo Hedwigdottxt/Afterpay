@@ -1,3 +1,4 @@
+<?php require "checklogin.php"; ?>
 <?php
 class Page
 {

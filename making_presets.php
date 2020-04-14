@@ -1,5 +1,4 @@
 <?php
-require "checklogin.php";
 session_start();
 require "digital_klokwidget.php";
 require "addpreset.php";
@@ -7,6 +6,7 @@ include 'pagehandler.php';
 $page = getPage();
 ?>
 <!doctype html>
+<meta http-equiv="refresh" content="86400"/>
 <head>
     <script
             src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -96,7 +96,7 @@ $page = getPage();
             <?php require "calender.php"?>
         <?php } ?>
         <?php if ($page->index1 == "order") { ?>
-            <?php require "TEST.php"?>
+            <?php require "orderaantallen_widget.php"?>
         <?php } ?></div>
     <div id="2" class="box b" ondrop="drop(event)" ondragover="allowDrop(event)" >
         <?php if ($page->index2 == "reis") { ?>
@@ -112,7 +112,7 @@ $page = getPage();
             <?php require "calender.php"?>
         <?php } ?>
         <?php if ($page->index2 == "order") { ?>
-            <?php require "TEST.php"?>
+            <?php require "orderaantallen_widget.php"?>
         <?php } ?></div>
     <div id="3" class="box c" ondrop="drop(event)" ondragover="allowDrop(event)" >
         <?php if ($page->index3 == "reis") { ?>
@@ -128,7 +128,7 @@ $page = getPage();
             <?php require "calender.php"?>
         <?php } ?>
         <?php if ($page->index3 == "order") { ?>
-            <?php require "TEST.php"?>
+            <?php require "orderaantallen_widget.php"?>
         <?php } ?></div>
     <div id="4" class="box d" ondrop="drop(event)" ondragover="allowDrop(event)" >
         <?php if ($page->index4 == "reis") { ?>
@@ -144,7 +144,7 @@ $page = getPage();
             <?php require "calender.php"?>
         <?php } ?>
         <?php if ($page->index4 == "order") { ?>
-            <?php require "TEST.php"?>
+            <?php require "orderaantallen_widget.php"?>
         <?php } ?></div>
 </div>
 </body>

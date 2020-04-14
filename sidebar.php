@@ -1,3 +1,4 @@
+<?php require "checklogin.php"; ?>
 <?php $nameErr = ""; ?>
 <style>
     .sidepanel  {
@@ -117,6 +118,14 @@
             <hr/>
         </form>
         <a id="reload" onclick="ReloadPage()">Save preset</a>
+        <hr>
+        <a id="reload" onclick="Logout()">Logout</a>
     </div>
     <hr>
 </div>
+<script>
+    function Logout() {
+        window.location="index.php";
+    }
+</script>
+

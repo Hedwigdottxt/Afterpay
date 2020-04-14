@@ -1,3 +1,4 @@
+<?php require "checklogin.php"; ?>
 <?php
 $host = "localhost";
 $databaseName = "afterpay";
@@ -6,7 +7,7 @@ $databasepassword = "student";
 try {
     $conn = new PDO("mysql:host=$host;dbname=$databaseName", $databaseusername, $databasepassword);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $stmt = $conn->prepare("SELECT presetname FROM afterpay.presets");
+    $stmt = $conn->prepare("SELECT presetname FROM afterpay.presets ORDER BY PrioID");
     $stmt->execute();
 
     $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
