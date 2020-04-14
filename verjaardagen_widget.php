@@ -3,7 +3,7 @@
         name="verjaardagenwidget"
         scrolling="no"
         frameborder="0"
-        height="400px"
+        height="130px"
         width="400px"
         allowfullscreen>
 </iframe>
