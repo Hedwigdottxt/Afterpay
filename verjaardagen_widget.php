@@ -4,6 +4,6 @@
         scrolling="no"
         frameborder="0"
         height="100px"
-        width="180px"
+        width="400px"
         allowfullscreen>
 </iframe>
