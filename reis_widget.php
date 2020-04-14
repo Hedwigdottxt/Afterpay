@@ -1,4 +1,4 @@
-<iframe src="reis_widget_content.php"
+<iframe src="server_widget_content.php"
         style="border-radius: 15px"
         name="9292_widget"
         scrolling="no"
