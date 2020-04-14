@@ -13,7 +13,6 @@
         /* display: block;
         position: relative;
         z-index: 100; */
-        border-radius: 15px;
     }
     .container{
         text-align: center;
@@ -40,7 +39,7 @@
             <div class="col-50">
                 <a style="text-decoration:none" href="preset_test.php">Preset Test </a>
                 <div class="box">
-                    <iframe src="preset_test.php" width = "100%" height = "1000px">
+                    <iframe src="preset_test.php" width = "100%" height = "1000px" style="border-radius: 10px">
                     </iframe>
                 </div> 
             </div>    
@@ -49,7 +48,7 @@
     <div class="container">
         <div class="row">
             <div class="col-50">
-                <button class="add" >+
+                <button type="button" class="add" >+
                 </button>
             </div>    
         </div>
