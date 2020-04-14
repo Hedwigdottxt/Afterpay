@@ -20,7 +20,7 @@ input[type=text] , input[type=password] {
     border: 1px solid #E5E5E5;
     border-radius: 4px;
     box-sizing: border-box;
-    alignment: left;
+    text-align: left;
 }
 
 input[type=submit] {
@@ -31,7 +31,7 @@ input[type=submit] {
     border: 1px solid #E5E5E5;
     border-radius: 4px;
     box-sizing: border-box;
-    alignment: left;
+    text-align: left;
 }
 
 .col-25 {
