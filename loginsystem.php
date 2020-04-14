@@ -24,11 +24,13 @@ if (isset($_POST["login_submit"])) {
         $query = "SELECT * FROM afterpay.users WHERE username = '" . $user . "' AND password = '" . $pass . "'";
         $result = mysqli_query($conn, $query);
         if (mysqli_num_rows($result) == 1) {
-            header('Location: /profiel.php');
+            $cookie_name = "Login";
+            $cookie_value = "Loggedin";
+            setcookie($cookie_name, $cookie_value, time() + (80000), "/");
+            header('Location: /github afterpay/Afterpay/making_presets.php');
         } else {
             echo '<script>alert("Login values not valid!")</script>';
         }
 
     }
 }
-
