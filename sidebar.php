@@ -1,6 +1,5 @@
 <?php $nameErr = ""; ?>
 <style>
-
     .sidepanel  {
         width: 0;
         position: fixed;
@@ -84,21 +83,6 @@
 
 <div id="mySidepanel" class="sidepanel">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-    <div id="PresetsForm" style="display:none;">
-        <form method="post">
-            Choose layout:
-            <select name="layout">
-                <option value="2-2">2-2</option>
-                <option value="1-2">1-2</option>
-                <option value="2-1">2-1</option>
-            </select><br>
-            Preset name:<br> <input type="text" name="presetname"><?php echo $nameErr ?><br>
-            <p></p><br>
-            <input onclick="openwidgets()" type="submit" name="makingpresetsubmit" value="Create preset" /><hr/><br/>
-            <br>
-
-        </form>
-    </div>
     <div id="layouteditp" style="display:none;">
         <form method="post">
             Choose widget 1:
@@ -117,7 +101,23 @@
     <div id="reis" draggable="true" ondragstart="drag(event)"><a>Bushalte Widget</a></div>
     <div id="youtube" draggable="true" ondragstart="drag(event)"><a>Youtube Widget</a></div>
     <div id="calender" draggable="true" ondragstart="drag(event)"><a>Kalender Widget</a></div>
-    <div id="nieuws" draggable="true" ondragstart="drag(event)"><a>Nieuws Widget<a></div>
+    <div id="nieuws" draggable="true" ondragstart="drag(event)"><a>Nieuws Widget</a></div>
+    <div id="order" draggable="true" ondragstart="drag(event)"><a>Orderaantallen Widget</a></div>
+    <hr>
+    <div id="PresetsForm">
+        <form method="post">
+            Choose layout:<br>
+            <select name="layout">
+                <option value="2-2">2-2</option>
+            </select><br>
+            Preset name:<br> <input type="text" name="presetname"><?php echo $nameErr ?><br>
+            <p></p><br>
+            <input onclick="openwidgets()" type="submit" name="makingpresetsubmit" value="Create preset" />
+            <a id="reload" onclick="ReloadPage()">Save preset</a>
+            <hr/><br/>
+            <br>
+        </form>
+    </div>
     <hr>
     <?php require "presetname_list.php";?>
 </div>
