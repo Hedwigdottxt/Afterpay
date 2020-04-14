@@ -56,6 +56,8 @@
     font-size: 22px;
     }
   </style>
+</head>
+<body onload="getSeconds();">
   <script>
     var curday;
     var secTime;
@@ -106,11 +108,10 @@
     document.getElementById("seconds").innerHTML = ( (secs < 10) ? "0" : "" ) + secs;
     }
   </script>
-  <body onload="getSeconds();">
   <div id="countholder">
     <div><span class="days" id="days"></span><div class="smalltext">Days</div></div>
     <div><span class="hours" id="hours"></span><div class="smalltext">Hours</div></div>
     <div><span class="minutes" id="minutes"></span><div class="smalltext">Minutes</div></div>
     <div><span class="seconds" id="seconds"></span><div class="smalltext">Seconds</div></div>
   </div>
-</head>
+</body> 
