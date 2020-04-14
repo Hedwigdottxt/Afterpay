@@ -2,9 +2,11 @@
 $host = "localhost";
 $databaseName = "afterpay";
 $databaseusername = "root";
-$databasepassword = "student";
+$databasepassword = "";
 
 $conn = mysqli_connect($host, $databaseusername, $databasepassword, $databaseName);
+
+
 
 
 if (isset($_POST["login_submit"])) {
@@ -21,14 +23,13 @@ if (isset($_POST["login_submit"])) {
     {
         echo '<script>alert("Enter a password!")</script>';
     } else {
-        $query = "SELECT * FROM afterpay.users WHERE username = '" . $user . "' AND password = '" . $pass . "'";
+        $query = "SELECT * FROM `afterpay.users` WHERE `username` = '" . $user . "' AND `password` = '" . $pass . "'";
         $result = mysqli_query($conn, $query);
         if (mysqli_num_rows($result) == 1) {
-            header('Location: /profiel.php');
+            header('Location: ../Afterpay/basic.php');
         } else {
             echo '<script>alert("Login values not valid!")</script>';
         }
 
     }
 }
-

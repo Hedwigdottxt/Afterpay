@@ -1,0 +1,62 @@
+body {
+    background-image: url('backgroundap.png');
+    background-size: cover;
+}
+
+img.bg {
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 1024px;
+      
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+      
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  @media screen and (max-width: 1024px) { /* Specific to this particular image */
+    img.bg {
+      left: 50%;
+      margin-left: -512px;   /* 50% */
+    }
+  }
+
+
+  button {
+    
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    /*background: transparent; */
+    background-color: transparent;
+    border: none !important;
+    font-size:0;
+}
+
+
+.logo {
+    margin-left: auto;
+    margin-top: 0pt;
+position: absolute;
+top: 15px;
+right: 0px;
+bottom: 0px;
+}
+
+
+  /* afbeelding in hoekje zetten*/
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+position: absolute;
+right: 0px;
+bottom: 0px;
+  }
