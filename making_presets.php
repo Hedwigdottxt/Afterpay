@@ -1,4 +1,10 @@
 <?php
+if (isset($_COOKIE['Login'])) {
+
+} else {
+    header('Location: /github afterpay/Afterpay/loginpage.php');
+}
+
 session_start();
 require "digital_klokwidget.php";
 require "addpreset.php";
@@ -148,4 +154,3 @@ $page = getPage();
 </div>
 </body>
 </html>
-
