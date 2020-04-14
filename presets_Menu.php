@@ -5,7 +5,7 @@
     <style>
     body{
         /* background-repeat: no-repeat; */
-        
+        margin-top: 100px;
     }
     .box{
         display: none;
@@ -13,6 +13,10 @@
         /* display: block;
         position: relative;
         z-index: 100; */
+    }
+    p{
+        font-family: "Poppins";
+        font-size: 64px;
     }
     .container{
         text-align: center;
@@ -24,7 +28,7 @@
         border-radius: 5px;
         color: black;
         padding: 0px 25px 0px 25px;
-
+        margin-top: 10px;
     }
     a:hover + .box {
         display: block;
@@ -34,6 +38,13 @@
     </style>
 </head>
 <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-50">
+                <p>Selecteer een preset.</p>
+            </div>    
+        </div>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-50">
