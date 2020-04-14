@@ -103,9 +103,10 @@
     <div id="calender" draggable="true" ondragstart="drag(event)"><a>Kalender Widget</a></div>
     <div id="nieuws" draggable="true" ondragstart="drag(event)"><a>Nieuws Widget</a></div>
     <div id="order" draggable="true" ondragstart="drag(event)"><a>Orderaantallen Widget</a></div>
+    <div id="verjaardag" draggable="true" ondragstart="drag(event)"><a>Verjaardag Widget</a></div>
     <hr>
     <div id="PresetsForm">
-        <form method="post">
+        <form method="post" style="display:none;">
             Choose layout:<br>
             <select name="layout">
                 <option value="2-2">2-2</option>
@@ -113,12 +114,9 @@
             Preset name:<br> <input type="text" name="presetname"><?php echo $nameErr ?><br>
             <p></p><br>
             <input onclick="openwidgets()" type="submit" name="makingpresetsubmit" value="Create preset" />
-            <a id="reload" onclick="ReloadPage()">Save preset</a>
-            <hr/><br/>
-            <br>
+            <hr/>
         </form>
+        <a id="reload" onclick="ReloadPage()">Save preset</a>
     </div>
     <hr>
-    <?php require "presetname_list.php";?>
 </div>
-
