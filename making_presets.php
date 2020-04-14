@@ -46,9 +46,13 @@ $page = getPage();
                 index: index,
                 widget: widget
             }, function() {
-        // Dingen die je wilt doen na het opslaan van de widget idk
-            });
 
+            });
+        }
+    </script>
+    <script>
+        function ReloadPage() {
+            window.location.href = window.location.href
         }
     </script>
 
@@ -75,62 +79,73 @@ $page = getPage();
         border-color: gray;
         border-style: dashed;
     }
-    </style>
+</style>
 <div class="wrapper">
     <div id ="1" class="box a" ondrop="drop(event)" ondragover="allowDrop(event)">
-    <?php if ($page->index1 == "reis") { ?>
-        <?php require "reis_widget.php"?>
-    <?php } ?>
-<?php if ($page->index1 == "youtube") { ?>
-<?php require "youtube_playlist.php"?>
-<?php } ?>
-<?php if ($page->index1 == "nieuws") { ?>
-<?php require "nieuws_widget.php"?>
-<?php } ?>
-<?php if ($page->index1 == "calender") { ?>
-<?php require "calender.php"?>
-<?php } ?></div>
+        <?php if ($page->index1 == "reis") { ?>
+            <?php require "reis_widget.php"?>
+        <?php } ?>
+        <?php if ($page->index1 == "youtube") { ?>
+            <?php require "youtube_playlist.php"?>
+        <?php } ?>
+        <?php if ($page->index1 == "nieuws") { ?>
+            <?php require "nieuws_widget.php"?>
+        <?php } ?>
+        <?php if ($page->index1 == "calender") { ?>
+            <?php require "calender.php"?>
+        <?php } ?>
+        <?php if ($page->index1 == "order") { ?>
+            <?php require "TEST.php"?>
+        <?php } ?></div>
     <div id="2" class="box b" ondrop="drop(event)" ondragover="allowDrop(event)" >
-<?php if ($page->index2 == "reis") { ?>
-<?php require "reis_widget.php"?>
-<?php } ?>
-<?php if ($page->index2 == "youtube") { ?>
-<?php require "youtube_playlist.php"?>
-<?php } ?>
-<?php if ($page->index2 == "nieuws") { ?>
-<?php require "nieuws_widget.php"?>
-<?php } ?>
-<?php if ($page->index2 == "calender") { ?>
-<?php require "calender.php"?>
-<?php } ?></div>
+        <?php if ($page->index2 == "reis") { ?>
+            <?php require "reis_widget.php"?>
+        <?php } ?>
+        <?php if ($page->index2 == "youtube") { ?>
+            <?php require "youtube_playlist.php"?>
+        <?php } ?>
+        <?php if ($page->index2 == "nieuws") { ?>
+            <?php require "nieuws_widget.php"?>
+        <?php } ?>
+        <?php if ($page->index2 == "calender") { ?>
+            <?php require "calender.php"?>
+        <?php } ?>
+        <?php if ($page->index2 == "order") { ?>
+            <?php require "TEST.php"?>
+        <?php } ?></div>
     <div id="3" class="box c" ondrop="drop(event)" ondragover="allowDrop(event)" >
-<?php if ($page->index3 == "reis") { ?>
-<?php require "reis_widget.php"?>
-<?php } ?>
-<?php if ($page->index3 == "youtube") { ?>
-<?php require "youtube_playlist.php"?>
-<?php } ?>
-<?php if ($page->index3 == "nieuws") { ?>
-<?php require "nieuws_widget.php"?>
-<?php } ?>
-<?php if ($page->index3 == "calender") { ?>
-<?php require "calender.php"?>
-<?php } ?></div>
+        <?php if ($page->index3 == "reis") { ?>
+            <?php require "reis_widget.php"?>
+        <?php } ?>
+        <?php if ($page->index3 == "youtube") { ?>
+            <?php require "youtube_playlist.php"?>
+        <?php } ?>
+        <?php if ($page->index3 == "nieuws") { ?>
+            <?php require "nieuws_widget.php"?>
+        <?php } ?>
+        <?php if ($page->index3 == "calender") { ?>
+            <?php require "calender.php"?>
+        <?php } ?>
+        <?php if ($page->index3 == "order") { ?>
+            <?php require "TEST.php"?>
+        <?php } ?></div>
     <div id="4" class="box d" ondrop="drop(event)" ondragover="allowDrop(event)" >
-<?php if ($page->index4 == "reis") { ?>
-<?php require "reis_widget.php"?>
-<?php } ?>
-<?php if ($page->index4 == "youtube") { ?>
-<?php require "youtube_playlist.php"?>
-<?php } ?>
-<?php if ($page->index4 == "nieuws") { ?>
-<?php require "nieuws_widget.php"?>
-<?php } ?>
-<?php if ($page->index4 == "calender") { ?>
-<?php require "calender.php"?>
-<?php } ?></div>
+        <?php if ($page->index4 == "reis") { ?>
+            <?php require "reis_widget.php"?>
+        <?php } ?>
+        <?php if ($page->index4 == "youtube") { ?>
+            <?php require "youtube_playlist.php"?>
+        <?php } ?>
+        <?php if ($page->index4 == "nieuws") { ?>
+            <?php require "nieuws_widget.php"?>
+        <?php } ?>
+        <?php if ($page->index4 == "calender") { ?>
+            <?php require "calender.php"?>
+        <?php } ?>
+        <?php if ($page->index4 == "order") { ?>
+            <?php require "TEST.php"?>
+        <?php } ?></div>
 </div>
 </body>
 </html>
-
 
