@@ -1,10 +1,5 @@
 <?php
-if (isset($_COOKIE['Login'])) {
-
-} else {
-    header('Location: /github afterpay/Afterpay/loginpage.php');
-}
-
+require "checklogin.php";
 session_start();
 require "digital_klokwidget.php";
 require "addpreset.php";
